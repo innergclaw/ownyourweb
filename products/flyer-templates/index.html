@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OWNYOURWEB | 45 AI Flyer Prompts</title>
-  <meta name="description" content="OWNYOURWEB 45-prompt flyer pack from the INNERGINTEL ECOSYSTEM for restaurants, barbershops, hookah lounges, beauty brands, food trucks, finance, AI startups, and more." />
+  <title>OWNYOURWEB | 45 Industry-Tested Marketing Prompts</title>
+  <meta name="description" content="OWNYOURWEB starter and full prompt packs from the INNERGINTEL ECOSYSTEM: 15 starter prompts or 45 expert-level industry-tested marketing prompts for ChatGPT Image generation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -565,6 +565,54 @@
       text-transform: uppercase;
     }
 
+    .industry-dropdown {
+      border: 3px solid var(--line);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .industry-dropdown summary {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 22px;
+      background: var(--ink);
+      color: var(--white);
+      cursor: pointer;
+      font-weight: 950;
+      text-transform: uppercase;
+      list-style: none;
+    }
+
+    .industry-dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .industry-dropdown summary::after {
+      content: "+";
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--white);
+      background: var(--lime);
+      color: var(--ink);
+      flex: 0 0 auto;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .industry-dropdown[open] summary::after {
+      content: "-";
+    }
+
+    .industry-dropdown .category-grid {
+      padding: 18px;
+    }
+
     .chat-demo {
       margin-top: 34px;
       border: 3px solid var(--line);
@@ -1010,6 +1058,65 @@
       box-shadow: 7px 7px 0 var(--white);
     }
 
+    .pack-options {
+      gap: 16px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .pack-card {
+      border: 3px solid var(--line);
+      background: var(--paper);
+      padding: 18px;
+      box-shadow: 6px 6px 0 rgba(13,13,13,.18);
+    }
+
+    .pack-card.featured {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .pack-card .price {
+      font-family: Anton, Impact, sans-serif;
+      font-size: 4.8rem;
+      line-height: .85;
+      font-weight: 400;
+    }
+
+    .pack-card h3 {
+      margin: 10px 0 0;
+      font-family: Anton, Impact, sans-serif;
+      font-size: 2.1rem;
+      line-height: .95;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .pack-card p {
+      margin: 12px 0 16px;
+      color: var(--graphite);
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .pack-card.featured p {
+      color: rgba(255,255,255,.74);
+    }
+
+    .pack-card .btn {
+      width: 100%;
+      box-shadow: 6px 6px 0 var(--line);
+    }
+
+    .pack-card.featured .btn {
+      box-shadow: 6px 6px 0 var(--white);
+    }
+
+    .pack-card .btn.pending {
+      background: var(--amber);
+      cursor: default;
+    }
+
     .footer {
       background: var(--ink);
       color: var(--white);
@@ -1260,7 +1367,7 @@
           <a href="#inside">Inside</a>
           <a href="#workflow">Workflow</a>
           <a href="#checkout">Checkout</a>
-          <a class="buy-mini" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy $10</a>
+          <a class="buy-mini" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Starter $10</a>
         </nav>
       </div>
     </header>
@@ -1269,17 +1376,17 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div>
-            <div class="eyebrow">Digital download • instant checkout</div>
-            <h1><span class="hero-title-kicker">45</span><br>AI Flyer<br>Prompts</h1>
-            <p class="lead">A plug-and-play prompt pack for creators, venues, beauty pros, food brands, service businesses, and anyone who needs graphics that look finished before the idea gets cold.</p>
+            <div class="eyebrow">Starter pack + full agency toolkit</div>
+            <h1><span class="hero-title-kicker">45</span><br>Industry-Tested<br>Marketing Prompts</h1>
+            <p class="lead">Start with 15 beginner-friendly prompts for $10, or unlock the complete 45-prompt creative toolkit built for businesses, creators, agencies, and freelancers.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy The Pack</a>
-              <a class="btn secondary" href="#inside">Preview Uses</a>
+              <a class="btn primary" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Starter Pack</a>
+              <a class="btn secondary" href="#checkout">Full Pack $40</a>
             </div>
             <div class="price-strip" aria-label="Product highlights">
-              <div><b>$10</b><span>one-time payment</span></div>
-              <div><b>45</b><span>ad-ready prompts</span></div>
-              <div><b>0</b><span>design degree needed</span></div>
+              <div><b>$10</b><span>starter: 15 prompts</span></div>
+              <div><b>$40</b><span>full: 45 prompts</span></div>
+              <div><b>15</b><span>industries covered</span></div>
             </div>
           </div>
 
@@ -1307,71 +1414,74 @@
       <section class="section" id="inside">
         <div class="wrap">
           <div class="section-head">
-            <h2>One pack. 15 industries.</h2>
-            <p>Ad-agency style prompts for clean, cinematic, funky, day, night, and photo-swap flyer generations.</p>
+            <h2>Two packs. 15 industries.</h2>
+            <p>The starter gives you one prompt per industry. The full pack unlocks three premium marketing variations per industry.</p>
           </div>
-          <div class="category-grid">
-            <article class="category">
-              <small>01</small>
-              <h3>Restaurants</h3>
-            </article>
-            <article class="category">
-              <small>02</small>
-              <h3>Barbershops</h3>
-            </article>
-            <article class="category">
-              <small>03</small>
-              <h3>Hookah Lounges</h3>
-            </article>
-            <article class="category">
-              <small>04</small>
-              <h3>Nail Salons</h3>
-            </article>
-            <article class="category">
-              <small>05</small>
-              <h3>Clothing Brands</h3>
-            </article>
-            <article class="category">
-              <small>06</small>
-              <h3>Gyms &amp; Fitness</h3>
-            </article>
-            <article class="category">
-              <small>07</small>
-              <h3>Real Estate</h3>
-            </article>
-            <article class="category">
-              <small>08</small>
-              <h3>Podcasts</h3>
-            </article>
-            <article class="category">
-              <small>09</small>
-              <h3>Music Artists</h3>
-            </article>
-            <article class="category">
-              <small>10</small>
-              <h3>Tattoo Artists</h3>
-            </article>
-            <article class="category">
-              <small>11</small>
-              <h3>Car Detailing</h3>
-            </article>
-            <article class="category">
-              <small>12</small>
-              <h3>Beauty Brands</h3>
-            </article>
-            <article class="category">
-              <small>13</small>
-              <h3>Food Trucks</h3>
-            </article>
-            <article class="category">
-              <small>14</small>
-              <h3>Finance &amp; Credit</h3>
-            </article>
-            <article class="category">
-              <small>15</small>
-              <h3>AI &amp; Tech Startups</h3>
-            </article>
-          </div>
+          <details class="industry-dropdown">
+            <summary>View all 15 industries included</summary>
+            <div class="category-grid">
+              <article class="category">
+                <small>01</small>
+                <h3>Restaurants</h3>
+              </article>
+              <article class="category">
+                <small>02</small>
+                <h3>Barbershops</h3>
+              </article>
+              <article class="category">
+                <small>03</small>
+                <h3>Hookah Lounges</h3>
+              </article>
+              <article class="category">
+                <small>04</small>
+                <h3>Nail Salons</h3>
+              </article>
+              <article class="category">
+                <small>05</small>
+                <h3>Clothing Brands</h3>
+              </article>
+              <article class="category">
+                <small>06</small>
+                <h3>Gyms &amp; Fitness</h3>
+              </article>
+              <article class="category">
+                <small>07</small>
+                <h3>Real Estate</h3>
+              </article>
+              <article class="category">
+                <small>08</small>
+                <h3>Podcasts</h3>
+              </article>
+              <article class="category">
+                <small>09</small>
+                <h3>Music Artists</h3>
+              </article>
+              <article class="category">
+                <small>10</small>
+                <h3>Tattoo Artists</h3>
+              </article>
+              <article class="category">
+                <small>11</small>
+                <h3>Car Detailing</h3>
+              </article>
+              <article class="category">
+                <small>12</small>
+                <h3>Beauty Brands</h3>
+              </article>
+              <article class="category">
+                <small>13</small>
+                <h3>Food Trucks</h3>
+              </article>
+              <article class="category">
+                <small>14</small>
+                <h3>Finance &amp; Credit</h3>
+              </article>
+              <article class="category">
+                <small>15</small>
+                <h3>AI &amp; Tech Startups</h3>
+              </article>
+            </div>
+          </details>
           <div class="chat-demo" aria-label="Animated chat prompt delivering a flyer design">
             <div class="chat-panel">
               <div class="chat-bubble prompt">Create a brunch flyer with orange energy, bold type, and a photo placeholder.</div>
@@ -1706,17 +1816,17 @@
       <section class="section dark">
         <div class="wrap">
           <div class="section-head">
-            <h2>Prompts that get out the way.</h2>
-            <p>The pack is made for the working rhythm: copy the prompt, add your photo when needed, generate the flyer, publish the post.</p>
+            <h2>A real creative toolkit.</h2>
+            <p>Start small with the sample pack, then upgrade into a complete prompt library built for repeatable business marketing.</p>
           </div>
           <div class="proof-grid">
             <article class="proof">
-              <b>45</b>
-              <p>Prompts across 15 industries with clean, cinematic night, and funky pop variations for everyday promo needs.</p>
+              <b>15</b>
+              <p>Starter prompts: one beginner-friendly marketing prompt from each industry for a simple entry-level offer.</p>
             </article>
             <article class="proof">
-              <b>Fast</b>
-              <p>Useful for social posts, stories, email graphics, event announcements, and service offers when the deadline is already in the room.</p>
+              <b>45</b>
+              <p>Full pack: expert-level prompt variations with commercial realism, cinematic lighting, and social campaign quality.</p>
             </article>
           </div>
         </div>
@@ -1753,14 +1863,21 @@
           <div class="checkout-panel">
             <div class="eyebrow">OWNYOURWEB release</div>
             <h2>Make the promo look official.</h2>
-              <p>A practical AI flyer prompt pack for creating clean, scroll-stopping promo graphics without starting from scratch.</p>
+            <p>Choose the entry-level starter pack or the full agency-style prompt toolkit. Both are built for ChatGPT Image generation and modern social-media marketing compositions.</p>
           </div>
-          <aside class="buy-card" aria-label="Checkout card">
-            <div>
+          <aside class="buy-card pack-options" aria-label="Checkout options">
+            <div class="pack-card">
               <div class="price">$10</div>
-              <p>Digital download. 45 prompt directions across 15 industries for events, services, launches, specials, and everyday promotions.</p>
+              <h3>Starter Pack</h3>
+              <p>15 prompts total. One beginner-friendly sample prompt from each industry. Perfect entry-level offer.</p>
+              <a class="btn" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Starter</a>
             </div>
-            <a class="btn" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Now</a>
+            <div class="pack-card featured">
+              <div class="price">$40</div>
+              <h3>Full Pack</h3>
+              <p>45 expert-level prompts. 15 industries, 3 premium marketing variations per industry, built for commercial ad realism.</p>
+              <a class="btn pending" href="#checkout" aria-disabled="true">Stripe Link Coming</a>
+            </div>
           </aside>
         </div>
       </section>
