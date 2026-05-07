@@ -933,6 +933,47 @@
       font-weight: 650;
     }
 
+    .model-strengths {
+      max-width: 58ch;
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-left: 5px solid var(--acid);
+      background: rgba(185, 255, 28, .16);
+    }
+
+    .model-strengths h3 {
+      margin: 0 0 10px;
+      font-size: .88rem;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .model-strengths ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .model-strengths li {
+      position: relative;
+      padding-left: 14px;
+      color: var(--graphite);
+      font-size: .82rem;
+      line-height: 1.25;
+      font-weight: 750;
+    }
+
+    .model-strengths li::before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      color: var(--line);
+      font-weight: 950;
+    }
+
     .buy-card {
       border: 3px solid var(--line);
       background: var(--ink);
@@ -1240,6 +1281,11 @@
       .quick-use li {
         min-height: auto;
       }
+
+      .model-strengths ul {
+        grid-template-columns: 1fr;
+      }
+
       .section {
         padding: 46px 0;
       }
@@ -1482,6 +1528,21 @@
             <div class="eyebrow">OWNYOURWEB release</div>
             <h2>Make the promo look official.</h2>
             <p>Choose the entry-level starter pack or the full agency-style prompt toolkit. Both are built for ChatGPT Image generation and modern social-media marketing compositions.</p>
+            <div class="model-strengths" aria-label="ChatGPT Image model strengths">
+              <h3>ChatGPT Image model's strengths</h3>
+              <ul>
+                <li>cinematic lighting</li>
+                <li>commercial ad realism</li>
+                <li>strong typography placement</li>
+                <li>product staging</li>
+                <li>emotionally clear compositions</li>
+                <li>modern social-media marketing aesthetics</li>
+                <li>believable branding</li>
+                <li>clean focal hierarchy</li>
+                <li>highly detailed textures/materials</li>
+                <li>realistic depth of field</li>
+              </ul>
+            </div>
           </div>
           <aside class="buy-card pack-options" aria-label="Checkout options">
             <div class="pack-card">
