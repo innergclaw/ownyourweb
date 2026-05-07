@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OWNYOURWEB | 15 Plug &amp; Play Flyer Templates</title>
-  <meta name="description" content="OWNYOURWEB flyer template pack from the INNERGINTEL ECOSYSTEM for polished promo graphics, events, services, food, nightlife, beauty, and product launches." />
+  <title>OWNYOURWEB | 45 Industry-Tested Marketing Prompts</title>
+  <meta name="description" content="OWNYOURWEB starter and full prompt packs from the INNERGINTEL ECOSYSTEM: 15 starter prompts or 45 expert-level industry-tested marketing prompts for ChatGPT Image generation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -370,19 +370,15 @@
       z-index: 4;
     }
 
-    .flyer-four {
-      position: absolute;
-      left: 68px;
-      bottom: 20px;
-      width: 210px;
-      aspect-ratio: 4 / 5;
-      border: 4px solid var(--line);
-      background:
-        linear-gradient(90deg, var(--amber) 0 24%, transparent 24% 100%),
-        var(--ink);
-      transform: rotate(8deg);
-      box-shadow: 12px 14px 0 rgba(13,13,13,.2);
-      z-index: 1;
+    .flyer.four {
+      right: 36px;
+      bottom: auto;
+      top: 112px;
+      width: 218px;
+      aspect-ratio: 1 / 1;
+      background: var(--ink);
+      transform: rotate(-4deg);
+      z-index: 5;
     }
 
     .flyer-title {
@@ -569,6 +565,54 @@
       text-transform: uppercase;
     }
 
+    .industry-dropdown {
+      border: 3px solid var(--line);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .industry-dropdown summary {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 22px;
+      background: var(--ink);
+      color: var(--white);
+      cursor: pointer;
+      font-weight: 950;
+      text-transform: uppercase;
+      list-style: none;
+    }
+
+    .industry-dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .industry-dropdown summary::after {
+      content: "+";
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--white);
+      background: var(--lime);
+      color: var(--ink);
+      flex: 0 0 auto;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .industry-dropdown[open] summary::after {
+      content: "-";
+    }
+
+    .industry-dropdown .category-grid {
+      padding: 18px;
+    }
+
     .chat-demo {
       margin-top: 34px;
       border: 3px solid var(--line);
@@ -699,6 +743,60 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    .quick-use {
+      margin-top: 28px;
+      border: 4px solid var(--line);
+      background: var(--white);
+      box-shadow: 10px 12px 0 rgba(13,13,13,.18);
+      padding: 22px;
+    }
+
+    .quick-use h3 {
+      margin: 0 0 16px;
+      font-size: clamp(1.3rem, 2.6vw, 2rem);
+      font-family: Anton, Impact, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .quick-use ol {
+      list-style: none;
+      counter-reset: quickSteps;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .quick-use li {
+      counter-increment: quickSteps;
+      min-height: 118px;
+      border: 3px solid var(--line);
+      background: var(--paper);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .78rem;
+      line-height: 1.25;
+    }
+
+    .quick-use li::before {
+      content: counter(quickSteps);
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--line);
+      background: var(--lime);
+      font-size: .9rem;
+      line-height: 1;
+      box-shadow: 4px 4px 0 var(--line);
     }
 
     @keyframes promptIn {
@@ -835,6 +933,47 @@
       font-weight: 650;
     }
 
+    .model-strengths {
+      max-width: 58ch;
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-left: 5px solid var(--acid);
+      background: rgba(185, 255, 28, .16);
+    }
+
+    .model-strengths h3 {
+      margin: 0 0 10px;
+      font-size: .88rem;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .model-strengths ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .model-strengths li {
+      position: relative;
+      padding-left: 14px;
+      color: var(--graphite);
+      font-size: .82rem;
+      line-height: 1.25;
+      font-weight: 750;
+    }
+
+    .model-strengths li::before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      color: var(--line);
+      font-weight: 950;
+    }
+
     .buy-card {
       border: 3px solid var(--line);
       background: var(--ink);
@@ -867,6 +1006,65 @@
       box-shadow: 7px 7px 0 var(--white);
     }
 
+    .pack-options {
+      gap: 16px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .pack-card {
+      border: 3px solid var(--line);
+      background: var(--paper);
+      padding: 18px;
+      box-shadow: 6px 6px 0 rgba(13,13,13,.18);
+    }
+
+    .pack-card.featured {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .pack-card .price {
+      font-family: Anton, Impact, sans-serif;
+      font-size: 4.8rem;
+      line-height: .85;
+      font-weight: 400;
+    }
+
+    .pack-card h3 {
+      margin: 10px 0 0;
+      font-family: Anton, Impact, sans-serif;
+      font-size: 2.1rem;
+      line-height: .95;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .pack-card p {
+      margin: 12px 0 16px;
+      color: var(--graphite);
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .pack-card.featured p {
+      color: rgba(255,255,255,.74);
+    }
+
+    .pack-card .btn {
+      width: 100%;
+      box-shadow: 6px 6px 0 var(--line);
+    }
+
+    .pack-card.featured .btn {
+      box-shadow: 6px 6px 0 var(--white);
+    }
+
+    .pack-card .btn.pending {
+      background: var(--amber);
+      cursor: default;
+    }
+
     .footer {
       background: var(--ink);
       color: var(--white);
@@ -887,6 +1085,30 @@
     .footer-brand {
       color: var(--white);
       font-weight: 1000;
+    }
+
+    .back-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--line);
+      background: var(--lime);
+      color: var(--ink);
+      box-shadow: 6px 6px 0 var(--line);
+      font-size: 1.35rem;
+      font-weight: 950;
+      line-height: 1;
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .back-top:hover {
+      transform: translate(3px, 3px);
+      box-shadow: 3px 3px 0 var(--line);
     }
 
     @media (max-width: 980px) {
@@ -919,7 +1141,10 @@
       .delivery-panel {
         min-height: 340px;
       }
-    }
+
+      .quick-use ol {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }    }
 
     @media (max-width: 720px) {
       .wrap {
@@ -932,18 +1157,16 @@
         align-items: flex-start;
       }
 
-      .brand-text small,
-      .nav a:not(.buy-mini) {
+      .brand-text small {
         display: none;
       }
 
-      .nav .buy-mini {
-        min-height: 42px;
-        margin-left: 0;
+      .nav {
+        display: none;
       }
 
       h1 {
-        font-size: clamp(3rem, 15.6vw, 4.18rem);
+        font-size: clamp(2.75rem, 14vw, 3.82rem);
         max-width: 100%;
       }
 
@@ -954,6 +1177,10 @@
 
       .price-strip {
         grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: calc(100% - 8px);
       }
 
       .price-strip div + div {
@@ -985,8 +1212,10 @@
         width: 168px;
       }
 
-      .flyer-four {
+      .flyer.four {
         width: 158px;
+        right: 20px;
+        top: 126px;
       }
 
       .flyer.one {
@@ -1043,6 +1272,22 @@
         width: min(76%, 230px);
       }
 
+      .quick-use {
+        padding: 16px;
+      }
+
+      .quick-use ol {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-use li {
+        min-height: auto;
+      }
+
+      .model-strengths ul {
+        grid-template-columns: 1fr;
+      }
+
       .section {
         padding: 46px 0;
       }
@@ -1090,7 +1335,7 @@
           <a href="#inside">Inside</a>
           <a href="#workflow">Workflow</a>
           <a href="#checkout">Checkout</a>
-          <a class="buy-mini" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy $10</a>
+          <a class="buy-mini" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Starter $10</a>
         </nav>
       </div>
     </header>
@@ -1099,17 +1344,17 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div>
-            <div class="eyebrow">Digital download • instant checkout</div>
-            <h1><span class="hero-title-kicker">15</span><br>Flyer<br>Templates</h1>
-            <p class="lead">A plug-and-play promo pack for creators, venues, beauty pros, food brands, service businesses, and anyone who needs graphics that look finished before the idea gets cold.</p>
+            <div class="eyebrow">Starter pack + full agency toolkit</div>
+            <h1><span class="hero-title-kicker">45</span><br>Industry<br>Tested<br>Marketing<br>Prompts</h1>
+            <p class="lead">Start with 15 beginner-friendly prompts for $10, or unlock the complete 45-prompt creative toolkit built for businesses, creators, agencies, and freelancers.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy The Pack</a>
-              <a class="btn secondary" href="#inside">Preview Uses</a>
+              <a class="btn primary" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Buy Starter Pack</a>
+              <a class="btn secondary" href="#checkout">Full Pack $40</a>
             </div>
             <div class="price-strip" aria-label="Product highlights">
-              <div><b>$10</b><span>one-time payment</span></div>
-              <div><b>15</b><span>ready-made layouts</span></div>
-              <div><b>0</b><span>design degree needed</span></div>
+              <div><b>$10</b><span>starter: 15 prompts</span></div>
+              <div><b>$40</b><span>full: 45 prompts</span></div>
+              <div><b>15</b><span>industries covered</span></div>
             </div>
           </div>
 
@@ -1122,9 +1367,11 @@
                 <img src="assets/union-template-1.jpg" alt="Love lashes beauty flyer template preview">
               </article>
               <article class="flyer preview three">
-                <img src="assets/union-template-3.jpg" alt="Get funded business flyer template preview">
+                <img src="assets/union-template-3.jpg" alt="Cloud Lounge hookah flyer template preview">
               </article>
-              <div class="flyer-four" aria-hidden="true"></div>
+              <article class="flyer preview four">
+                <img src="assets/union-template-4.jpg" alt="Toot Da Barber booking flyer template preview">
+              </article>
               <div class="badge">Swap<br>Text<br>Post</div>
             </div>
           </div>
@@ -1135,31 +1382,74 @@
       <section class="section" id="inside">
         <div class="wrap">
           <div class="section-head">
-            <h2>One pack. Many promo needs.</h2>
-            <p>Ready-made flyer layouts for beauty, food, events, nightlife, service offers, and business promotions.</p>
+            <h2>Two packs. 15 industries.</h2>
+            <p>The starter gives you one prompt per industry. The full pack unlocks three premium marketing variations per industry.</p>
           </div>
-          <div class="category-grid">
-            <article class="category">
-              <small>01</small>
-              <h3>Beauty Flyers</h3>
-            </article>
-            <article class="category">
-              <small>02</small>
-              <h3>Credit Repair</h3>
-            </article>
-            <article class="category">
-              <small>03</small>
-              <h3>Food &amp; Lounge</h3>
-            </article>
-            <article class="category">
-              <small>04</small>
-              <h3>Day Party</h3>
-            </article>
-            <article class="category">
-              <small>05</small>
-              <h3>Club Promo</h3>
-            </article>
-          </div>
+          <details class="industry-dropdown">
+            <summary>View all 15 industries included</summary>
+            <div class="category-grid">
+              <article class="category">
+                <small>01</small>
+                <h3>Restaurants</h3>
+              </article>
+              <article class="category">
+                <small>02</small>
+                <h3>Barbershops</h3>
+              </article>
+              <article class="category">
+                <small>03</small>
+                <h3>Hookah Lounges</h3>
+              </article>
+              <article class="category">
+                <small>04</small>
+                <h3>Nail Salons</h3>
+              </article>
+              <article class="category">
+                <small>05</small>
+                <h3>Clothing Brands</h3>
+              </article>
+              <article class="category">
+                <small>06</small>
+                <h3>Gyms &amp; Fitness</h3>
+              </article>
+              <article class="category">
+                <small>07</small>
+                <h3>Real Estate</h3>
+              </article>
+              <article class="category">
+                <small>08</small>
+                <h3>Podcasts</h3>
+              </article>
+              <article class="category">
+                <small>09</small>
+                <h3>Music Artists</h3>
+              </article>
+              <article class="category">
+                <small>10</small>
+                <h3>Tattoo Artists</h3>
+              </article>
+              <article class="category">
+                <small>11</small>
+                <h3>Car Detailing</h3>
+              </article>
+              <article class="category">
+                <small>12</small>
+                <h3>Beauty Brands</h3>
+              </article>
+              <article class="category">
+                <small>13</small>
+                <h3>Food Trucks</h3>
+              </article>
+              <article class="category">
+                <small>14</small>
+                <h3>Finance &amp; Credit</h3>
+              </article>
+              <article class="category">
+                <small>15</small>
+                <h3>AI &amp; Tech Startups</h3>
+              </article>
+            </div>
+          </details>
           <div class="chat-demo" aria-label="Animated chat prompt delivering a flyer design">
             <div class="chat-panel">
               <div class="chat-bubble prompt">Create a brunch flyer with orange energy, bold type, and a photo placeholder.</div>
@@ -1176,23 +1466,33 @@
               </div>
             </div>
           </div>
+          <div class="quick-use" aria-label="How to use the flyer prompts">
+            <h3>How to Use: Super Quick &amp; Easy</h3>
+            <ol>
+              <li>Copy any prompt when you receive your email.</li>
+              <li>Paste it into your AI image generator, like ChatGPT.</li>
+              <li>Upload your photo or photos for placement.</li>
+              <li>Download your flyer.</li>
+              <li>Post it or send it to clients.</li>
+            </ol>
+          </div>
         </div>
       </section>
 
       <section class="section dark">
         <div class="wrap">
           <div class="section-head">
-            <h2>Design that gets out the way.</h2>
-            <p>The pack is made for the working rhythm: choose a layout, drop in your photo, rewrite the headline, publish the post.</p>
+            <h2>A real creative toolkit.</h2>
+            <p>Start small with the sample pack, then upgrade into a complete prompt library built for repeatable business marketing.</p>
           </div>
           <div class="proof-grid">
             <article class="proof">
               <b>15</b>
-              <p>Layouts with enough variety for weekly promos, quick launches, and offer tests without rebuilding from a blank canvas.</p>
+              <p>Starter prompts: one beginner-friendly marketing prompt from each industry for a simple entry-level offer.</p>
             </article>
             <article class="proof">
-              <b>Fast</b>
-              <p>Useful for social posts, stories, email graphics, event announcements, and service offers when the deadline is already in the room.</p>
+              <b>45</b>
+              <p>Full pack: expert-level prompt variations with commercial realism, cinematic lighting, and social campaign quality.</p>
             </article>
           </div>
         </div>
@@ -1202,18 +1502,18 @@
         <div class="wrap">
           <div class="section-head">
             <h2>Simple workflow.</h2>
-            <p>Choose a template, update the details, add your visuals, and publish a polished promo faster.</p>
+            <p>Choose a prompt, paste it into ChatGPT Image, add your visuals, and publish a polished promo faster.</p>
           </div>
           <div class="steps">
             <article class="step">
               <span class="step-number">1</span>
-              <h3>Pick a layout</h3>
-              <p>Start with a flyer structure built for common promo categories.</p>
+              <h3>Pick a prompt</h3>
+              <p>Start with an industry-specific direction built for the type of promo you need.</p>
             </article>
             <article class="step">
               <span class="step-number">2</span>
-              <h3>Replace details</h3>
-              <p>Swap your photo, title, colors, date, offer, and contact info.</p>
+              <h3>Add your photo</h3>
+              <p>Use the INCLUDE PHOTO prompts when you want your image placed into the flyer.</p>
             </article>
             <article class="step">
               <span class="step-number">3</span>
@@ -1229,18 +1529,42 @@
           <div class="checkout-panel">
             <div class="eyebrow">OWNYOURWEB release</div>
             <h2>Make the promo look official.</h2>
-            <p>A practical flyer template pack for creating clean, scroll-stopping promo graphics without starting from scratch.</p>
-          </div>
-          <aside class="buy-card" aria-label="Checkout card">
-            <div>
-              <div class="price">$10</div>
-              <p>Digital download. Easy to customize for events, services, launches, specials, and everyday promotions.</p>
+            <p>Choose the entry-level starter pack or the full agency-style prompt toolkit. Both are built for ChatGPT Image generation and modern social-media marketing compositions.</p>
+            <div class="model-strengths" aria-label="ChatGPT Image model strengths">
+              <h3>ChatGPT Image model's strengths</h3>
+              <ul>
+                <li>cinematic lighting</li>
+                <li>commercial ad realism</li>
+                <li>strong typography placement</li>
+                <li>product staging</li>
+                <li>emotionally clear compositions</li>
+                <li>modern social-media marketing aesthetics</li>
+                <li>believable branding</li>
+                <li>clean focal hierarchy</li>
+                <li>highly detailed textures/materials</li>
+                <li>realistic depth of field</li>
+              </ul>
             </div>
-            <a class="btn" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Now</a>
+          </div>
+          <aside class="buy-card pack-options" aria-label="Checkout options">
+            <div class="pack-card">
+              <div class="price">$10</div>
+              <h3>Starter Pack</h3>
+              <p>15 prompts total. One beginner-friendly sample prompt from each industry. Perfect entry-level offer.</p>
+              <a class="btn" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Buy Starter</a>
+            </div>
+            <div class="pack-card featured">
+              <div class="price">$40</div>
+              <h3>Full Pack</h3>
+              <p>45 expert-level prompts. 15 industries, 3 premium marketing variations per industry, built for commercial ad realism.</p>
+              <a class="btn" href="https://buy.stripe.com/fZu4gB3NZg4Nahocyfao80V">Buy Full Pack</a>
+            </div>
           </aside>
         </div>
       </section>
     </main>
+
+    <a class="back-top" href="#top" aria-label="Back to top">↑</a>
 
     <footer class="footer">
       <div class="wrap footer-inner">

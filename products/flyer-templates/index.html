@@ -1157,18 +1157,16 @@
         align-items: flex-start;
       }
 
-      .brand-text small,
-      .nav a:not(.buy-mini) {
+      .brand-text small {
         display: none;
       }
 
-      .nav .buy-mini {
-        min-height: 42px;
-        margin-left: 0;
+      .nav {
+        display: none;
       }
 
       h1 {
-        font-size: clamp(3rem, 15.6vw, 4.18rem);
+        font-size: clamp(2.75rem, 14vw, 3.82rem);
         max-width: 100%;
       }
 
@@ -1179,6 +1177,10 @@
 
       .price-strip {
         grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: calc(100% - 8px);
       }
 
       .price-strip div + div {
@@ -1343,7 +1345,7 @@
         <div class="wrap hero-grid">
           <div>
             <div class="eyebrow">Starter pack + full agency toolkit</div>
-            <h1><span class="hero-title-kicker">45</span><br>Industry-Tested<br>Marketing Prompts</h1>
+            <h1><span class="hero-title-kicker">45</span><br>Industry<br>Tested<br>Marketing<br>Prompts</h1>
             <p class="lead">Start with 15 beginner-friendly prompts for $10, or unlock the complete 45-prompt creative toolkit built for businesses, creators, agencies, and freelancers.</p>
             <div class="hero-actions">
               <a class="btn primary" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Buy Starter Pack</a>
