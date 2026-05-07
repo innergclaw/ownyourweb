@@ -1046,6 +1046,30 @@
       font-weight: 1000;
     }
 
+    .back-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--line);
+      background: var(--lime);
+      color: var(--ink);
+      box-shadow: 6px 6px 0 var(--line);
+      font-size: 1.35rem;
+      font-weight: 950;
+      line-height: 1;
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .back-top:hover {
+      transform: translate(3px, 3px);
+      box-shadow: 3px 3px 0 var(--line);
+    }
+
     @media (max-width: 980px) {
       .hero-grid,
       .section-head,
@@ -1263,7 +1287,7 @@
           <a href="#inside">Inside</a>
           <a href="#workflow">Workflow</a>
           <a href="#checkout">Checkout</a>
-          <a class="buy-mini" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Starter $10</a>
+          <a class="buy-mini" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Starter $10</a>
         </nav>
       </div>
     </header>
@@ -1276,7 +1300,7 @@
             <h1><span class="hero-title-kicker">45</span><br>Industry-Tested<br>Marketing Prompts</h1>
             <p class="lead">Start with 15 beginner-friendly prompts for $10, or unlock the complete 45-prompt creative toolkit built for businesses, creators, agencies, and freelancers.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Starter Pack</a>
+              <a class="btn primary" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Buy Starter Pack</a>
               <a class="btn secondary" href="#checkout">Full Pack $40</a>
             </div>
             <div class="price-strip" aria-label="Product highlights">
@@ -1464,18 +1488,20 @@
               <div class="price">$10</div>
               <h3>Starter Pack</h3>
               <p>15 prompts total. One beginner-friendly sample prompt from each industry. Perfect entry-level offer.</p>
-              <a class="btn" href="https://buy.stripe.com/5kQ8wRgALcSB3T0cyfao80U">Buy Starter</a>
+              <a class="btn" href="https://buy.stripe.com/8x228t3NZ19TfBIaq7ao80W">Buy Starter</a>
             </div>
             <div class="pack-card featured">
               <div class="price">$40</div>
               <h3>Full Pack</h3>
               <p>45 expert-level prompts. 15 industries, 3 premium marketing variations per industry, built for commercial ad realism.</p>
-              <a class="btn pending" href="#checkout" aria-disabled="true">Stripe Link Coming</a>
+              <a class="btn" href="https://buy.stripe.com/fZu4gB3NZg4Nahocyfao80V">Buy Full Pack</a>
             </div>
           </aside>
         </div>
       </section>
     </main>
+
+    <a class="back-top" href="#top" aria-label="Back to top">↑</a>
 
     <footer class="footer">
       <div class="wrap footer-inner">
